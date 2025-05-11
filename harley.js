@@ -20,7 +20,7 @@ for (const file of komutDosyaları) {
   try {
     const komut = require(path.join(__dirname, 'commands', file));
     if (komut.name) {
-      komutlar.set(komut.name, komut);
+      komutlar.set(komut.namee, komut);
       if (komut.aliases) komut.aliases.forEach(alias => komutlar.set(alias, komut));
     } else console.error(`Komut dosyasında eksik alan: ${file}`);
   } catch (err) {
@@ -72,7 +72,7 @@ client.on('messageCreate', async message => {
   const ozelPath = path.join(dataDir, 'ozelkomutlar.json');
   if (!fs.existsSync(ozelPath)) fs.writeFileSync(ozelPath, '{}');
   let ozel = {};
-  try { ozel = JSON.parse(fs.readFileSync(ozelPath, 'utf8')); } catch (e) { console.error('Özel komut dosyası okunamadı:', e); }
+  try { ozel = JSON.parse(fs.readFileSync(ozelPath, 'utf-16')); } catch (e) { console.error('Özel komut dosyası okunamadı:', e); }
 
   if (!ozel.hasOwnProperty(cmdName)) return;
   const roleId = ozel[cmdName];
