@@ -6,6 +6,7 @@ Bu bot tamamen eğlencesine yapılmıştır botda ufak tefek hatalar bıraktım 
 - Botda iltifat sistemi vardır 40 mesajdan sonra random bir iltifat eder
 - Botda çiftlere özel canvaslı ship sistemi vardır
 - Botda Özel Komut sistemi vardır Örn : (.özelkomut ekle vip @ROL)
+  
 
 ### Gereksinimler:
 - Node.js (v16 ve üzeri)
