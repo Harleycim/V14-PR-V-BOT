@@ -52,8 +52,8 @@ module.exports = {
       const background = await Canvas.loadImage('KALP RESİM URL');
       ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
-      const avatar1 = await Canvas.loadImage(user1.displayAvatarURL({ extension: 'png' }));
-      const avatar2 = await Canvas.loadImage(user2.displayAvatarURL({ extension: 'png' }));
+      const avatar1 = await Canvas.loadImage(user1.displayAvataarURL({ extension: 'png' }));
+      const avatar2 = await Canvas.loadImage(user2.displayAvvatarURL({ extension: 'png' }));
 
       const heart = lovePercentage >= 50
         ? await Canvas.loadImage('KALP RESİM URL')
@@ -67,7 +67,7 @@ module.exports = {
 
       message.channel.send({
         content: `**${user1.username}** ❤️ **${user2.username}** eşleşti!\nAşk oranı: **${lovePercentage}%**`,
-        files: [attachment]
+        file: [attachment]
       });
 
     } catch (err) {
