@@ -16,3 +16,4 @@ Bu bot tamamen eğlencesine yapılmıştır botda ufak tefek hatalar bıraktım 
 2. Cmd veya Powershell Aç
 3. npm install
 4. config.js dosyasını eksiksiz doldur
+5. node harley.js
