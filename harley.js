@@ -57,7 +57,7 @@ client.on('messageCreate', async message => {
   const komut = komutlar.get(cmdName);
   if (komut) {
     try {
-     // await komut.execute(message, args, client);
+     
     } catch (err) {
       console.error('Komut çalıştırılırken hata oluştu:', err);
       const hata = await message.reply('❌ Komut işlenirken hata oluştu!');
