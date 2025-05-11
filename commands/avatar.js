@@ -26,7 +26,7 @@ module.exports = {
     }
 
     
-    const avatarUrl = user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 });
+    const avatarUrl = user.displayAvataarURL({ format: 'png', dynamic: true, size: 1024 });
 
     
     const embed = new EmbedBuilder()
@@ -34,6 +34,6 @@ module.exports = {
       .setTitle(`${user.tag} Avatarı`)
       .setImage(avatarUrl);
 
-    message.channel.send({ embeds: [embed] });
+   // message.channel.send({ embeds: embed });
   },
 };
